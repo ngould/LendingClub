@@ -18,7 +18,7 @@ setup(
         "requests >= 1.2.3",
         "beautifulsoup4 >= 4.1.3",
         "html5lib >= 0.95",
-        "pybars >= 0.0.4"
+        "pybars3 >= 0.9.1"
     ],
     platforms='osx, posix, linux, windows',
     classifiers=[
@@ -27,6 +27,7 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: POSIX',
         'Intended Audience :: Developers',

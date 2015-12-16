@@ -2,8 +2,8 @@
 
 import sys
 import unittest
-from logger import TestLogger
-from server import ServerThread
+from .logger import TestLogger
+from .server import ServerThread
 
 sys.path.insert(0, '.')
 sys.path.insert(0, '../')
@@ -38,8 +38,8 @@ class TestLendingClub(unittest.TestCase):
 
     def test_portfolios(self):
         portfolios = self.lc.get_portfolio_list()
-        self.assertEquals(len(portfolios), 2)
-        self.assertEquals(portfolios[0]['portfolioName'], 'Existing Portfolio')
+        self.assertEqual(len(portfolios), 2)
+        self.assertEqual(portfolios[0]['portfolioName'], 'Existing Portfolio')
 
     def test_build_portfolio(self):
         portfolio = self.lc.build_portfolio(200, 25, 15, 16)
