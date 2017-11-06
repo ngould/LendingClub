@@ -5,10 +5,9 @@ setup(
     version=open('lendingclub/VERSION').read().strip(),
     author='Jeremy Gillick',
     author_email='none@none.com',
-    packages=['lendingclub', 'lendingclub.tests'],
+    packages=['lendingclub'],
     package_data={
-        'lendingclub': ['VERSION', 'filter.handlebars'],
-        'lendingclub.tests': ['assets/*.*']
+        'lendingclub': ['VERSION'],
     },
     url='http://github.com/jgillick/LendingClub',
     license=open('LICENSE.txt').read(),
